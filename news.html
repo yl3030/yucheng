@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郁成企業</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html">
+            <img class="header_logo" src="./public/img/logo-header.png" alt="">
+        </a>
+        <div class="header_right">
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="./about.html">關於郁成</a></li>
+                    <li><a href="">代理品牌</a></li>
+                    <li class="active"><a href="./news.html">最新消息</a></li>
+                    <li><a href="./contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+            <div class="header_search d-xl-flex d-none" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <img src="./public/img/icon-search.svg" alt="">
+                <span>網站搜尋</span>
+            </div>
+        </div>
+        <div class="header_right d-xl-none">
+            <div class="header_search-m">
+                <img src="./public/img/icon-search-black.svg" alt="">
+                <input type="text" placeholder="網站搜尋">
+            </div>
+            <div class="header_menu">
+                <img src="./public/img/icon-menu.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input type="text" placeholder="請輸入關鍵字">
+                    <button><img src="./public/img/icon-search.svg" alt=""></button>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="banner-common">
+            <img class="banner-common_pic" src="./public/img/news-banner.png" alt="">
+            <div class="banner-common_text" data-aos="fade-up" data-aos-duration="800">
+                <h1>最新消息</h1>
+                <h2>NEWS</h2>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+              <li class="breadcrumb-item active" aria-current="page">最新消息</li>
+            </ol>
+        </nav>
+        <div class="container">
+            <select name="" id="" class="year-select">
+                <option value="">2022</option>
+                <option value="">2021</option>
+                <option value="">2020</option>
+                <option value="">2019</option>
+                <option value="">2018</option>
+            </select>
+        </div>
+        <div class="news_inner" data-aos="fade-up" data-aos-duration="800">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./news-content.html" class="news_item">
+                            <div class="news_pic">
+                                <img src="./public/img/news-1.png" alt="">
+                            </div>
+                            <div class="news_text">
+                              <p class="news_date">2022-01-01</p>
+                              <h5 class="news_title">最新產品資訊</h5>
+                              <p class="news_content">
+                                  KOJEX最新提供安全動型UC-P筒夾，是在夾頭內部加装止動銷PIN的設計，提供安全...
+                              </p>
+                              <div class="news_lookmore">
+                                  <span>查看更多</span>
+                                  <div class="news_lookmore_arrow">
+                                      <img src="./public/img/arrow-longwhite-right.svg" alt="">
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav aria-label="Page navigation" class="news_pagi" data-aos="fade-up" data-aos-duration="800">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link page-arrow" href="#"><img src="./public/img/page-arrow-prev2.svg" alt=""></a></li>
+                  <li class="page-item"><a class="page-link page-arrow" href="#"><img src="./public/img/page-arrow-prev.svg" alt=""></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item d-sm-block d-none"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item d-sm-block d-none"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item d-md-block d-none"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item d-md-block d-none"><a class="page-link" href="#">7</a></li>
+                  <li class="page-item d-md-block d-none"><a class="page-link" href="#">8</a></li>
+                  <li class="page-item d-md-block d-none"><a class="page-link" href="#">9</a></li>
+                  <li class="page-item d-md-block d-none"><a class="page-link" href="#">10</a></li>
+                  <li class="page-item"><a class="page-link page-arrow" href="#"><img src="./public/img/page-arrow-next.svg" alt=""></a></li>
+                  <li class="page-item"><a class="page-link page-arrow" href="#"><img src="./public/img/page-arrow-next2.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <div class="contact">
+        <p>用心聆聽您的需求<span class="d-lg-inline-block d-none">，</span><br class="d-lg-none">提供最佳解決方案</p>
+        <a href="./contact.html">聯絡我們</a>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <div class="footer_left">
+                    <img class="footer_logo" src="./public/img/logo-footer.svg" alt="">
+                    <form class="footer_search d-lg-flex d-none">
+                        <input type="text" placeholder="請輸入關鍵字">
+                        <button class="footer_search_btn">
+                            <img src="./public/img/icon-search.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div class="footer_center">
+                    <a href="tel:+886 4 2539 4661" class="footer_phone">
+                        <img src="./public/img/icon-phone.svg" alt="">
+                        <span>+886 4 2539 4661</span>
+                    </a>
+                    <ul class="footer_inform">
+                        <li>FAX：+886 4 2539 4671</li>
+                        <li>E-Mail：service@yucheng.tw</li>
+                        <li>台中市潭子區祥和路133巷88號1樓</li>
+                    </ul>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_nav d-lg-flex d-none">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="./about.html">關於郁成</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./contact.html">聯絡我們</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="">代理品牌</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./index.html">回首頁</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./news.html">最新消息</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_nav d-lg-none">
+                        <a href="./about.html">關於郁成</a>
+                        <a href="">代理品牌</a>
+                        <a href="./news.html">最新消息</a>
+                        <a href="./contact.html">聯絡我們</a>
+                        <a href="./index.html">回首頁</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                © 2022 YU CHENG ENTERPRISE Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="btn-top">
+        <img src="./public/img/arrow-longwhite-up.svg" alt="">
+    </div>
+    
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/common.js"></script>
+</body>
+</html>

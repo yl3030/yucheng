@@ -23,13 +23,13 @@
         <div class="header_right">
             <nav class="header_nav">
                 <ul>
-                    <li><a href="">關於郁成</a></li>
+                    <li><a href="./about.html">關於郁成</a></li>
                     <li><a href="">代理品牌</a></li>
-                    <li><a href="">最新消息</a></li>
-                    <li><a href="">聯絡我們</a></li>
+                    <li><a href="./news.html">最新消息</a></li>
+                    <li><a href="./contact.html">聯絡我們</a></li>
                 </ul>
             </nav>
-            <div class="header_search d-xl-flex d-none">
+            <div class="header_search d-xl-flex d-none" data-bs-toggle="modal" data-bs-target="#searchModal">
                 <img src="./public/img/icon-search.svg" alt="">
                 <span>網站搜尋</span>
             </div>
@@ -45,15 +45,31 @@
         </div>
     </header>
 
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input type="text" placeholder="請輸入關鍵字">
+                    <button><img src="./public/img/icon-search.svg" alt=""></button>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <main>
         <div class="home-slider">
             <div class="swiper-container banner">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                      <div class="banner_item">
+                      <div class="banner_item" data-index="1">
                           <img class="d-md-block d-none" src="./public/img/banner-1.png" alt="">
                           <img class="d-md-none" src="./public/img/banner-1-m.png" alt="">
-                          <div class="banner_text">
+                          <div class="banner_text" data-aos="fade-up">
                               <h2>
                                 THE LEADING<br> 
                                 BRAND OF<br> 
@@ -64,7 +80,7 @@
                       </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="banner_item">
+                    <div class="banner_item" data-index="2">
                         <img class="d-md-block d-none" src="./public/img/banner-3.png" alt="">
                         <img class="d-md-none" src="./public/img/banner-3-m.png" alt="">
                         <div class="banner_text">
@@ -77,7 +93,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="banner_item">
+                    <div class="banner_item" data-index="3">
                         <img class="d-md-block d-none" src="./public/img/banner-2.png" alt="">
                         <img class="d-md-none" src="./public/img/banner-2-m.png" alt="">
                         <div class="banner_text">
@@ -90,6 +106,20 @@
                         </div>
                     </div>
                   </div>
+                  <!-- <div class="swiper-slide">
+                    <div class="banner_item" data-index="3">
+                        <video class="d-md-block d-none" autoplay loop muted playsinline src=""></video>
+                        <video class="d-md-none" autoplay loop muted playsinline src=""></video>
+                        <div class="banner_text">
+                            <h2>
+                                SERVICE<br> 
+                                PROFESSIONALF<br> 
+                                <span>& INTEGRATED</span>
+                            </h2>
+                            <h3>專業為您一次解決所有問題</h3>
+                        </div>
+                    </div>
+                  </div> -->
                 </div>     
                 <div class="swiper-button-next banner-next"></div>
                 <div class="swiper-button-prev banner-prev"></div>
@@ -103,7 +133,7 @@
             <div class="news_inner">
                 <div class="container">
                     <div class="news_titleBox">
-                        <h4 class="title-common">最新消息</h4>
+                        <h4 class="title-common" data-aos="fade-up" data-aos-duration="800">最新消息</h4>
                         <div class="news_titleBox_btn">
                             <div class="news_arrow">
                                 <div class="news-prev">
@@ -113,15 +143,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.54 26.83"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="圖層_2" data-name="圖層 2"><g id="內容"><polygon class="cls-1" points="2.12 0 0 2.12 11.29 13.42 0 24.71 2.12 26.83 15.54 13.42 2.12 0"/></g></g></svg>
                                 </div>
                             </div>
-                            <a href="" class="news_more">
+                            <a href="./news.html" class="news_more">
                                 <img src="./public/img/icon-plus.svg" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-container newsSwiper">
+                    <div class="swiper-container newsSwiper" data-aos="fade-up">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                              <a href="" class="news_item">
+                              <a href="./news-content.html" class="news_item">
                                   <div class="news_pic">
                                       <img src="./public/img/news-1.png" alt="">
                                   </div>
@@ -141,7 +171,7 @@
                               </a>
                           </div>
                           <div class="swiper-slide">
-                            <a href="" class="news_item">
+                            <a href="./news-content.html" class="news_item">
                                 <div class="news_pic">
                                     <img src="./public/img/news-2.png" alt="">
                                 </div>
@@ -161,7 +191,7 @@
                             </a>
                           </div>
                           <div class="swiper-slide">
-                            <a href="" class="news_item">
+                            <a href="./news-content.html" class="news_item">
                                 <div class="news_pic">
                                     <img src="./public/img/news-1.png" alt="">
                                 </div>
@@ -188,9 +218,9 @@
         </div>
         <div class="compete">
             <div class="container">
-                <h4 class="title-common">提供您 <span>最佳競爭力</span></h4>
+                <h4 class="title-common" data-aos="fade-up" data-aos-duration="800">提供您 <span>最佳競爭力</span></h4>
                 <div class="compete_content">
-                    <div class="compete_item">
+                    <div class="compete_item" data-aos="fade-up" data-aos-duration="800">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="compete_pic">
@@ -208,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="compete_item">
+                    <div class="compete_item" data-aos="fade-up" data-aos-duration="800">
                         <div class="row">
                             <div class="col-lg-6 order-lg-2 order-1">
                                 <div class="compete_pic">
@@ -226,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="compete_item">
+                    <div class="compete_item" data-aos="fade-up" data-aos-duration="800">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="compete_pic">
@@ -245,16 +275,16 @@
                         </div>
                     </div>
                 </div>
-                <a href="" class="compete_more">
+                <a href="./news-content.html" class="compete_more">
                     了解更多
                 </a>
             </div>
         </div>
         <div class="brand">
             <div class="container">
-                <h4 class="title-common">代理品牌</h4>
+                <h4 class="title-common" data-aos="fade-up">代理品牌</h4>
                 <div class="brand_inner d-lg-block d-none">
-                    <div class="row">
+                    <div class="row" data-aos="fade-up">
                         <div class="col-3 brand_itemBox">
                             <div class="brand_item empty">
                                 <img class="normal" src="./public/img/brand-empty.svg" alt="">
@@ -305,7 +335,155 @@
                 </div>
             </div>
         </div>
+
+        <div class="flow">
+            <h4 class="title-common" data-aos="fade-up" data-aos-duration="800"><span>全方位 客製服務流程</span></h4>
+            <p class="flow_intro">秉持專業誠信的態度，我們給予最專業的技術、熱忱的服務，以滿足客戶需求為己任，並提供完善的售後服務。</p>
+            <div class="flow_content">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4 col-6">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="800">
+                            <div class="flow_item_pic">
+                                <img src="./public/img/flow-1.svg" alt="">
+                            </div>
+                            <ul>
+                                <li>- 探索解析問題。</li>
+                                <li>- 鑑定問題並整合需求。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-6">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div class="flow_item_pic">
+                                <img src="./public/img/flow-2.svg" alt="">
+                            </div>
+                            <ul>
+                                <li>- 提升效能與產值評估。</li>
+                                <li>- 製程建議與研擬預算。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-6">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="flow_item_pic">
+                                <img src="./public/img/flow-3.svg" alt="">
+                            </div>
+                            <ul>
+                                <li>- 簽約後依工件圖面進行溝通並繪製2D圖。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-6">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                            <div class="flow_item_pic">
+                                <img src="./public/img/flow-4.svg" alt="">
+                            </div>
+                            <ul>
+                                <li>- 2D圖確認後進行量產。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-6">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                            <div class="flow_item_pic">
+                                <img src="./public/img/flow-5.svg" alt="">
+                            </div>
+                            <ul>
+                                <li>- 嚴格把關每一個產品細節後出貨。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-6">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+                            <div class="flow_item_pic">
+                                <img src="./public/img/flow-6.svg" alt="">
+                            </div>
+                            <ul>
+                                <li>- 顧客驗收產品後請款。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-6">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1200">
+                            <div class="flow_item_pic">
+                                <img src="./public/img/flow-7.svg" alt="">
+                            </div>
+                            <ul>
+                                <li>- 交貨後彙整顧客迴響。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <div class="contact">
+        <p>用心聆聽您的需求<span class="d-lg-inline-block d-none">，</span><br class="d-lg-none">提供最佳解決方案</p>
+        <a href="./contact.html">聯絡我們</a>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <div class="footer_left">
+                    <img class="footer_logo" src="./public/img/logo-footer.svg" alt="">
+                    <form class="footer_search d-lg-flex d-none">
+                        <input type="text" placeholder="請輸入關鍵字">
+                        <button class="footer_search_btn">
+                            <img src="./public/img/icon-search.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div class="footer_center">
+                    <a href="tel:+886 4 2539 4661" class="footer_phone">
+                        <img src="./public/img/icon-phone.svg" alt="">
+                        <span>+886 4 2539 4661</span>
+                    </a>
+                    <ul class="footer_inform">
+                        <li>FAX：+886 4 2539 4671</li>
+                        <li>E-Mail：service@yucheng.tw</li>
+                        <li>台中市潭子區祥和路133巷88號1樓</li>
+                    </ul>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_nav d-lg-flex d-none">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="./about.html">關於郁成</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./contact.html">聯絡我們</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="">代理品牌</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./index.html">回首頁</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./news.html">最新消息</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_nav d-lg-none">
+                        <a href="./about.html">關於郁成</a>
+                        <a href="">代理品牌</a>
+                        <a href="./news.html">最新消息</a>
+                        <a href="./contact.html">聯絡我們</a>
+                        <a href="./index.html">回首頁</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                © 2022 YU CHENG ENTERPRISE Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="btn-top">
+        <img src="./public/img/arrow-longwhite-up.svg" alt="">
+    </div>
     
 
     <script src="./public/js/jquery/jquery.min.js"></script>
@@ -322,21 +500,26 @@
             },
             speed: 800,
             loop: true,
+            simulateTouch: false,
         })
 
-        swiperBanner.on('slideChange', function(){
-            let index = $(".swiper-slide-next").attr("data-swiper-slide-index");
-            // console.log("index=" + index);
-            let indexInt = parseInt(index) + 1;
-            let bannerNum;
-            if(index < 10) {
-                bannerNum = "0" + indexInt;
+        $(".banner-next, .banner-prev").click(function(){
+            let index = $(".swiper-slide-active").find(".banner_item").attr("data-index");
+            let indexInt = parseInt(index);
+            let swiperIndex;
+            if(index < 10){
+                swiperIndex = "0" + indexInt;
             }else {
-                bannerNum = indexInt;
+                swiperIndex = indexInt;
             }
-            // console.log("bannerNum=" + bannerNum);
-            $(".banner_num_active").text(bannerNum);
+            $(".banner_num_active").text(swiperIndex);
         })
+
+        // swiperBanner.on('slideChange', function(){
+        //     let index = $(".swiper-slide-active").find(".banner_item").attr("data-index");
+        //     let indexInt = parseInt(index) + 1;
+        //     $(".banner_num_active").text("0" + indexInt);
+        // })
 
         var swiperNews = new Swiper(".newsSwiper", {
             slidesPerView: 1,
