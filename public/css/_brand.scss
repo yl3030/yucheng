@@ -431,6 +431,7 @@
         &_feat {
             padding: 45px 0 60px;
             border-bottom: 1px solid $text-main;
+            min-height: 350px;
             h4 {
                 font-size: 24px;
                 font-weight: 600;
@@ -525,16 +526,31 @@
             td {
                 padding: 10px;
                 border-bottom: 1px solid #6D6D6D;
+                border-right: 1px solid #6D6D6D;
                 font-size: 24px;
                 font-weight: 300;
-                &:first-child {
+                &:last-child {
+                    border-right: 0;
+                }
+                &.td-img {
+                    background-color: #fff !important;
+                }
+                &.br {
                     border-right: 1px solid #6D6D6D;
+                }
+                &.p-small {
+                    padding: 3px 10px;
                 }
             }
             .tr-title {
                 td {
                     background-color: #A5A5A6;
                     color: #fff;
+                }
+                &:first-child {
+                    td {
+                        border-top: 1px solid #6D6D6D;
+                    }
                 }
             }
             tr {
@@ -543,6 +559,14 @@
                         background-color: #E8E8E8;
                     }
                 }
+            }
+            .td-title {
+                background-color: #A5A5A6;
+                color: #fff;
+            }
+            &-box {
+                // min-width: 920px;
+                overflow-x: auto;
             }
         }
         &_video {
@@ -560,6 +584,66 @@
                     height: 100%;
                     top: 0;
                     left: 0;
+                }
+            }
+        }
+        &_tool {
+            h4 {
+                font-size: 40px;
+                font-weight: 500;
+                margin: 0 0 40px;
+            }
+            ul {
+                li {
+                    font-size: 24px;
+                    font-weight: 300;
+                    color: $gray-44;
+                }
+            }
+        }
+        &_toolHolder {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+            &_text {
+                width: 40%;
+                padding-right: 40px;
+            }
+            &_pic {
+                width: 60%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &_bigpic {
+            margin-bottom: 90px;
+            width: 100%;
+        }
+        &_blade {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            margin-bottom: 55px;
+            &_text {
+                width: 78%;
+            }
+            &_pic {
+                width: 22%;
+                img {
+                    width: 100%;
+                }
+            }
+            &_list {
+                margin-top: 40px;
+                display: flex;
+                h5 {
+                    color: $main-color;
+                    font-weight: normal;
+                    margin: 0;
+                    margin-top: 5px;
+                    font-size: 24px;
                 }
             }
         }
@@ -783,6 +867,19 @@
             }
         }
     }
+    #videoModal {
+        .video_arrow {
+            &.prev {
+                left: 0;
+            }
+            &.next {
+                right: 0;
+            }
+        }
+        .video_close {
+            right: 0;
+        }
+    }
 }
 
 @media screen and (max-width:1400px) {
@@ -899,6 +996,14 @@
                     font-size: 18px;
                 }
             }
+            &_toolHolder {
+                &_text {
+                    width: 50%;
+                }
+                &_pic {
+                    width: 50%;
+                }
+            }
         }
         &_catalogue {
             &_item {
@@ -975,6 +1080,7 @@
             }
             &_feat {
                 padding: 40px 0;
+                min-height: inherit;
             }
             &_btn {
                 a {
@@ -998,6 +1104,30 @@
             }
             &_title {
                 margin-bottom: 50px;
+            }
+            &_toolHolder {
+                &_text {
+                    width: 100%;
+                    padding: 0 0 40px 0; 
+                }
+                &_pic {
+                    width: 100%;
+                }
+            }
+            &_blade {
+                &_text {
+                    width: 100%;
+                    padding: 0 0 60px 0;
+                }
+                &_pic {
+                    width: 100%;
+                }
+                &_list {
+                    display: block;
+                    h5 {
+                        margin-bottom: 10px;
+                    }
+                }
             }
         }
         &_catalogue {
@@ -1038,6 +1168,17 @@
             }
             &_video {
                 padding-bottom: 80px;
+            }
+            &_tool {
+                h4 {
+                    font-size: 32px;
+                    margin-bottom: 20px;
+                }
+                ul {
+                    li {
+                        font-size: 20px;
+                    }
+                }
             }
         }
         &_catalogue {
