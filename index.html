@@ -500,7 +500,33 @@
             },
             speed: 800,
             loop: true,
-            simulateTouch: false,
+            simulateTouch: false,        
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            on: {
+                init: function(){
+                    $(".banner_num_active").text("01");
+                },
+                slideChange: function(){
+                    let index = $(".swiper-slide-active").find(".banner_item").attr("data-index");
+                    let indexInt = parseInt(index);
+                    let length = $(".banner").find(".swiper-slide").length - 2;
+                    let swiperIndex;
+                    if(indexInt==length){
+                        swiperIndex = 1;
+                    }else {
+                        swiperIndex = indexInt + 1;
+                    }
+
+                    if(index < 10){
+                        swiperIndex = "0" + swiperIndex;
+                    }
+
+                    $(".banner_num_active").text(swiperIndex);
+                }
+            }
         })
 
         $(".banner-next, .banner-prev").click(function(){
@@ -515,11 +541,6 @@
             $(".banner_num_active").text(swiperIndex);
         })
 
-        // swiperBanner.on('slideChange', function(){
-        //     let index = $(".swiper-slide-active").find(".banner_item").attr("data-index");
-        //     let indexInt = parseInt(index) + 1;
-        //     $(".banner_num_active").text("0" + indexInt);
-        // })
 
         var swiperNews = new Swiper(".newsSwiper", {
             slidesPerView: 1,

@@ -3058,7 +3058,7 @@ main {
   letter-spacing: 0.05em;
 }
 
-.brand_catalogue_pic img {
+.brand_catalogue_img img {
   width: 100%;
 }
 
@@ -3753,12 +3753,12 @@ main {
   left: 0;
 }
 
-.brand_catalogue_item {
+.brand_catalogue_file {
   margin-bottom: 80px;
   display: block;
 }
 
-.brand_catalogue_item p {
+.brand_catalogue_file p {
   text-align: center;
   padding-top: 20px;
   font-size: 24px;
@@ -4048,7 +4048,7 @@ main {
   .brand_spec_toolHolder_pic {
     width: 50%;
   }
-  .brand_catalogue_item p {
+  .brand_catalogue_file p {
     font-size: 20px;
     padding-top: 10px;
   }
@@ -4185,7 +4185,7 @@ main {
   .brand_spec_tool ul li {
     font-size: 20px;
   }
-  .brand_catalogue_item {
+  .brand_catalogue_file {
     margin-bottom: 40px;
   }
 }

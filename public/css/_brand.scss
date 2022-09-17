@@ -94,7 +94,7 @@
                 letter-spacing: 0.05em;
             }
         }
-        &_pic {
+        &_img {
             img {
                 width: 100%;
             }
@@ -672,7 +672,7 @@
                 left: 0;
             }
         }
-        &_item {
+        &_file {
             margin-bottom: 80px;
             display: block;
             p {
@@ -1006,7 +1006,7 @@
             }
         }
         &_catalogue {
-            &_item {
+            &_file {
                 p {
                     font-size: 20px;
                     padding-top: 10px;
@@ -1182,7 +1182,7 @@
             }
         }
         &_catalogue {
-            &_item {
+            &_file {
                 margin-bottom: 40px;
             }
         }
